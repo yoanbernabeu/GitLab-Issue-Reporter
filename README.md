@@ -12,12 +12,14 @@
   - [Fonctionnalités principales](#fonctionnalités-principales)
   - [Utilisation](#utilisation)
     - [Ajouter un Repository](#ajouter-un-repository)
+    - [Créer un rapport de bug (issue)](#créer-un-rapport-de-bug-issue)
   - [Auteurs](#auteurs)
   - [Licence](#licence)
+- [GitLab-Issue-Reporter](#gitlab-issue-reporter-1)
 
 ## Description
 
-GitLab Issue Reporter est une extension pour Google Chrome permettanrt d'envoyer des rapports de bugs directement depuis une page web vers un projet GitLab.
+GitLab Issue Reporter est une extension pour Google Chrome permettant d'envoyer des rapports de bugs directement depuis une page web vers un projet GitLab.
 
 ## Prérequis
 
@@ -63,6 +65,12 @@ Pour cela, cliquez sur l'icône de l'extension dans la barre d'outils de votre n
 Pour obtenir un token d'accès à l'API GitLab, rendez-vous sur votre instance GitLab, allez dans `Settings` > `Access Tokens` et créez un nouveau token avec les permissions `api`.
 
 Pour obtenir l'ID du projet, rendez-vous sur votre instance GitLab, allez dans le projet que vous souhaitez utiliser et récupérez l'ID dans la page Settings > General.
+
+### Créer un rapport de bug (issue)
+
+Pour créer un rapport de bug, il suffit de faire un clic droit sur la page web que vous souhaitez rapporter, de sélectionner l'option "Enyoyer à GitLab" et de choisir le repository dans lequel vous souhaitez créer le rapport.
+
+En arrière-plan, l'extension va récupérer les informations de la page web (URL et titre) et ouvrir une issue dans le repository sélectionné (Nom de l'issue : Titre de la page web, Description de l'issue : URL de la page web).
 
 ## Auteurs
 
