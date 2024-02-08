@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Configuration GitLab Issue Reporter</title>
+    <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+    <h1>GitLab Issue Reporter</h1>
+    <div id="configForm">
+        
+        
+        <h2>Ajouter Configuration GitLab</h2>
+        <input type="text" id="newGitlabName" placeholder="Nom du projet">
+        <input type="text" id="newGitlabApiKey" placeholder="API Key">
+        <input type="text" id="newGitlabUrl" placeholder="URL de l'instance GitLab">
+        <input type="text" id="newGitlabIdProject" placeholder="ID du projet">
+        <button id="addGitlabConfig">Ajouter Configuration</button>
+    </div>
+    
+
+    <div id="gitlabConfigList">
+        <h2>Configurations GitLab</h2>
+        <span id="gitlabConfigs"></span>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

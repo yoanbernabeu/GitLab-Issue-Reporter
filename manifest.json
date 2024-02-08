@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "GitLab Issue Reporter",
+    "version": "1.0",
+    "description": "Reportez facilement les contenus des pages à GitLab sous forme d'issues.",
+    "permissions": ["contextMenus", "activeTab", "storage", "notifications"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      },
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["popup.html", "popup.js", "styles/popup.css"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  
