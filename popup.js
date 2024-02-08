@@ -32,24 +32,34 @@ function displayGitLabConfigs() {
         listElement.innerHTML = '';
         data.gitLabConfigs.forEach((config, index) => {
             const div = document.createElement('div');
+            div.style.textAlign = 'center'; // Centre le contenu de la div
+            div.style.marginBottom = '10px'; // Ajoute une marge en bas pour séparer les éléments
 
-            const textContent = document.createTextNode(`${config.name} - ${config.url} - ${config.idProject}`);
-            div.appendChild(textContent);
+            const nameElement = document.createElement('p'); // Utiliser un paragraphe pour le nom
+            nameElement.textContent = config.name;
+            div.appendChild(nameElement);
+
+            // Création d'un conteneur pour les boutons pour les aligner plus facilement
+            const buttonsDiv = document.createElement('span');
+            buttonsDiv.style.marginTop = '5px'; // Ajoute une marge en haut pour séparer du nom
 
             const editButton = document.createElement('button');
             editButton.textContent = 'Modifier';
             editButton.addEventListener('click', function() { editGitLabConfig(index); });
-            div.appendChild(editButton);
+            buttonsDiv.appendChild(editButton);
 
             const deleteButton = document.createElement('button');
             deleteButton.textContent = 'Supprimer';
             deleteButton.addEventListener('click', function() { deleteGitLabConfig(index); });
-            div.appendChild(deleteButton);
+            buttonsDiv.appendChild(deleteButton);
+
+            div.appendChild(buttonsDiv); // Ajoute les boutons sous le nom du projet
 
             listElement.appendChild(div);
         });
     });
 }
+
 
 function editGitLabConfig(index) {
     chrome.storage.local.get('gitLabConfigs', function(data) {
