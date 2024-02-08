@@ -15,7 +15,6 @@
     - [Créer un rapport de bug (issue)](#créer-un-rapport-de-bug-issue)
   - [Auteurs](#auteurs)
   - [Licence](#licence)
-- [GitLab-Issue-Reporter](#gitlab-issue-reporter-1)
 
 ## Description
 
@@ -79,5 +78,3 @@ En arrière-plan, l'extension va récupérer les informations de la page web (UR
 ## Licence
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
-# GitLab-Issue-Reporter
