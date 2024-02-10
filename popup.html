@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Configuration GitLab Issue Reporter</title>
+    <title>GitLab Issue Reporter Configuration</title>
     <link rel="stylesheet" href="styles/popup.css">
 </head>
 <body>
@@ -10,17 +10,17 @@
     <div id="configForm">
         
         
-        <h2>Ajouter/Editer une Configuration GitLab</h2>
-        <input type="text" id="newGitlabName" placeholder="Nom du projet">
-        <input type="text" id="newGitlabApiKey" placeholder="API Key">
-        <input type="text" id="newGitlabUrl" placeholder="URL de l'instance GitLab">
-        <input type="text" id="newGitlabIdProject" placeholder="ID du projet">
-        <button id="addGitlabConfig">Ajouter Configuration</button>
+        <h2>Add/Edit GitLab Configuration</h2>
+        <input type="text" id="newGitlabName" placeholder="Project Name">
+        <input type="text" id="newGitlabApiKey" placeholder="Access Token">
+        <input type="text" id="newGitlabUrl" placeholder="GitLab Instance URL">
+        <input type="text" id="newGitlabIdProject" placeholder="Project ID">
+        <button id="addGitlabConfig">Add Configuration</button>
     </div>
     
 
     <div id="gitlabConfigList">
-        <h2>Configurations GitLab</h2>
+        <h2>GitLab Configurations</h2>
         <span id="gitlabConfigs"></span>
     </div>
     <script src="popup.js"></script>

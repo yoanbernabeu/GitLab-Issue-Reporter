@@ -11,7 +11,7 @@ function updateContextMenus() {
   chrome.contextMenus.removeAll(function() {
     chrome.contextMenus.create({
       id: "sendToGitLab",
-      title: "Envoyer à GitLab",
+      title: "Send to GitLab",
       contexts: ["page"]
     });
 
@@ -67,7 +67,7 @@ function createGitLabIssue(content, title, url, projectIndex) {
     const urlApi = `${config.url}/api/v4/projects/${encodeURIComponent(config.idProject)}/issues`;
     const body = JSON.stringify({
       title: title,
-      description: `URL de la page: ${url}\n\n${content}`,
+      description: `URL: ${url}`,
       confidential: false
     });
 

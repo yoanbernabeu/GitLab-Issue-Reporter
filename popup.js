@@ -20,7 +20,7 @@ function addGitLabConfig() {
         chrome.storage.local.set({gitLabConfigs: configs}, function() {
             displayGitLabConfigs();
             document.getElementById('addGitlabConfig').removeAttribute('data-editing-index');
-            document.getElementById('addGitlabConfig').textContent = 'Ajouter Configuration';
+            document.getElementById('addGitlabConfig').textContent = 'Add GitLab Configuration';
         });
     });
 }
@@ -44,12 +44,12 @@ function displayGitLabConfigs() {
             buttonsDiv.style.marginTop = '5px'; // Ajoute une marge en haut pour séparer du nom
 
             const editButton = document.createElement('button');
-            editButton.textContent = 'Modifier';
+            editButton.textContent = 'Edit';
             editButton.addEventListener('click', function() { editGitLabConfig(index); });
             buttonsDiv.appendChild(editButton);
 
             const deleteButton = document.createElement('button');
-            deleteButton.textContent = 'Supprimer';
+            deleteButton.textContent = 'Delete';
             deleteButton.addEventListener('click', function() { deleteGitLabConfig(index); });
             buttonsDiv.appendChild(deleteButton);
 
@@ -72,7 +72,7 @@ function editGitLabConfig(index) {
         // Stockez l'index de la configuration en cours de modification pour l'utiliser lors de la sauvegarde
         document.getElementById('addGitlabConfig').setAttribute('data-editing-index', index);
         // Changez le texte du bouton pour indiquer une mise à jour
-        document.getElementById('addGitlabConfig').textContent = 'Mettre à jour la configuration';
+        document.getElementById('addGitlabConfig').textContent = 'Update GitLab Configuration';
     });
 }
 

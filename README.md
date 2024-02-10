@@ -1,80 +1,83 @@
+
 # GitLab Issue Reporter
 
-## Table des matières
+![](./icons/logo.png)
+
+## Table of Contents
 
 - [GitLab Issue Reporter](#gitlab-issue-reporter)
-  - [Table des matières](#table-des-matières)
+  - [Table of Contents](#table-of-contents)
   - [Description](#description)
-  - [Prérequis](#prérequis)
-  - [Avertissement](#avertissement)
+  - [Prerequisites](#prerequisites)
+  - [Warning](#warning)
   - [Installation](#installation)
     - [Google Chrome](#google-chrome)
-  - [Fonctionnalités principales](#fonctionnalités-principales)
-  - [Utilisation](#utilisation)
-    - [Ajouter un Repository](#ajouter-un-repository)
-    - [Créer un rapport de bug (issue)](#créer-un-rapport-de-bug-issue)
-  - [Auteurs](#auteurs)
-  - [Licence](#licence)
+  - [Main Features](#main-features)
+  - [Usage](#usage)
+    - [Add a Repository](#add-a-repository)
+    - [Create a Bug Report (Issue)](#create-a-bug-report-issue)
+  - [Authors](#authors)
+  - [License](#license)
 
 ## Description
 
-GitLab Issue Reporter est une extension pour Google Chrome permettant d'envoyer des rapports de bugs directement depuis une page web vers un projet GitLab.
+GitLab Issue Reporter is a Google Chrome extension that allows sending bug reports directly from a web page to a GitLab project.
 
-## Prérequis
+## Prerequisites
 
-Pour utiliser cette extension, vous aurez besoin du navigateur Google Chrome.
+To use this extension, you will need the Google Chrome browser.
 
-## Avertissement
+## Warning
 
-Cette extension est fournie à titre expérimental.
+This extension is provided on an experimental basis.
 
-Vous ne la trouverez pas sur le Chrome Web Store.
+You will not find it on the Chrome Web Store.
 
-Libre à vous de l'utiliser tel quel ou de la modifier pour l'adapter à vos besoins.
+Feel free to use it as is or modify it to suit your needs.
 
 ## Installation
 
 ### Google Chrome
 
-Pour installer cette extension en mode développeur, suivez les étapes ci-dessous :
+To install this extension in developer mode, follow the steps below:
 
-1. Clonez ce dépôt
-3. Ouvrez Google Chrome et accédez à `chrome://extensions/`.
-4. Activez le mode "Developer mode" (Mode développeur) situé en haut à droite de la page.
-5. Cliquez sur "Load unpacked" (Charger l'extension non empaquetée) et sélectionnez le dossier contenant le code source de l'extension.
-6. L'extension doit maintenant être installée et prête à l'emploi.
+1. Clone this repository
+2. Open Google Chrome and go to `chrome://extensions/`.
+3. Enable "Developer mode" located at the top right of the page.
+4. Click on "Load unpacked" and select the folder containing the source code of the extension.
+5. The extension should now be installed and ready to use.
 
-## Fonctionnalités principales
+## Main Features
 
-Une fois l'extension installée, elle ajoute une nouvelle option au menu contextuel (clic droit) qui vous permet de sélectionner parmi une liste un repository GitLab et de créer un rapport de bug.
+Once the extension is installed, it adds a new option to the context menu (right-click) that allows you to select from a list a GitLab repository and create a bug report.
 
-## Utilisation
+## Usage
 
-### Ajouter un Repository
+### Add a Repository
 
-Pour utiliser l'extension il faut ajouter un repository GitLab.
+To use the extension you need to add a GitLab repository.
 
-Pour cela, cliquez sur l'icône de l'extension dans la barre d'outils de votre navigateur et ajoutez un repository en renseignant les champs suivants :
+To do this, click on the extension icon in your browser's toolbar and add a repository by filling in the following fields:
 
-- Nom du repository (Libre)
-- Access Token (Token d'accès à l'API GitLab)
-- URL de l'intance GitLab (URL de l'instance GitLab)
-- ID du projet (ID du projet GitLab)
+- Repository Name (Free)
+- Access Token (GitLab API access token)
+- GitLab Instance URL (URL of the GitLab instance)
+- Project ID (ID of the GitLab project)
 
-Pour obtenir un token d'accès à l'API GitLab, rendez-vous sur votre instance GitLab, allez dans `Settings` > `Access Tokens` et créez un nouveau token avec les permissions `api`.
+To obtain an access token to the GitLab API, go to your GitLab instance, go to `Settings` > `Access Tokens` and create a new token with `api` permissions.
 
-Pour obtenir l'ID du projet, rendez-vous sur votre instance GitLab, allez dans le projet que vous souhaitez utiliser et récupérez l'ID dans la page Settings > General.
+To get the project ID, go to your GitLab instance, go to the project you want to use and retrieve the ID in Settings > General.
 
-### Créer un rapport de bug (issue)
+### Create a Bug Report (Issue)
 
-Pour créer un rapport de bug, il suffit de faire un clic droit sur la page web que vous souhaitez rapporter, de sélectionner l'option "Enyoyer à GitLab" et de choisir le repository dans lequel vous souhaitez créer le rapport.
+To create a bug report, simply right-click on the web page you want to report, select the "Send to GitLab" option, and choose the repository in which you want to create the report.
 
-En arrière-plan, l'extension va récupérer les informations de la page web (URL et titre) et ouvrir une issue dans le repository sélectionné (Nom de l'issue : Titre de la page web, Description de l'issue : URL de la page web).
+In the background, the extension will retrieve the web page's information (URL and title) and open an issue in the selected repository (Issue name: Web page title, Issue description: Web page URL).
 
-## Auteurs
+## Authors
 
 - [Yoan Bernabeu](https://github.com/yoanbernabeu)
 
-## Licence
+## License
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
