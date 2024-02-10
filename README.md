@@ -1,15 +1,15 @@
 
-# GitLab Issue Reporter
+# GitLab Issue Reporter (Experimental)
 
 ![](./icons/logo.png)
 
 ## Table of Contents
 
-- [GitLab Issue Reporter](#gitlab-issue-reporter)
+- [GitLab Issue Reporter (Experimental)](#gitlab-issue-reporter-experimental)
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [Prerequisites](#prerequisites)
-  - [Warning](#warning)
+  - [Disclaimer](#disclaimer)
   - [Installation](#installation)
     - [Google Chrome](#google-chrome)
   - [Main Features](#main-features)
@@ -17,6 +17,7 @@
     - [Add a Repository](#add-a-repository)
     - [Create a Bug Report (Issue)](#create-a-bug-report-issue)
   - [Authors](#authors)
+  - [Contributing](#contributing)
   - [License](#license)
 
 ## Description
@@ -27,7 +28,7 @@ GitLab Issue Reporter is a Google Chrome extension that allows sending bug repor
 
 To use this extension, you will need the Google Chrome browser.
 
-## Warning
+## Disclaimer
 
 This extension is provided on an experimental basis.
 
@@ -78,6 +79,12 @@ In the background, the extension will retrieve the web page's information (URL a
 
 - [Yoan Bernabeu](https://github.com/yoanbernabeu)
 
+## Contributing
+
+This project is in an experimental state and is not actively maintained. Feel free to fork it and modify it to suit your needs.
+
 ## License
+
+[![GitHub license](https://img.shields.io/github/license/yoanbernabeu/gitlab-issue-reporter)](LICENSE)
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
